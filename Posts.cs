@@ -33,8 +33,12 @@ namespace csharptest
     }
     public class DeletePosts
     {
+        
         public void DeletePost()
         {
+            Console.Clear();
+            var test = true;
+            do{ 
             Console.Write("Skriv in med siffror vilket inlägg du vill radera ");
             
             string jsonPath = @"posts.json";
@@ -57,7 +61,6 @@ namespace csharptest
                 }
             };
             
-
             try
             {
                 int delIndex = Convert.ToInt32(Console.ReadLine()) - 1;
@@ -69,16 +72,22 @@ namespace csharptest
 
                 jsonData = JsonConvert.SerializeObject(postList);
                 File.WriteAllText(jsonPath, jsonData);
+                test = false;
             }
             catch (FormatException)
-            {
+            {   
+                Console.ForegroundColor = ConsoleColor.Red; 
+                Console.Clear();
                 Console.WriteLine("Fel inmatat värde");
+                test = true;
             }
             catch (ArgumentOutOfRangeException)
             {
+                Console.ForegroundColor = ConsoleColor.Red; 
                 Console.WriteLine("Fel inmatat värde");
+                test = true;
             }
-
+            }while(test);
      
 
         }

@@ -18,6 +18,7 @@ namespace csharptest
         private static bool MainMenu()
         {
             // print options to console
+            Console.ResetColor();  
             Console.Clear();
             Console.WriteLine("Johannes Gästbok");
             Console.WriteLine(" ");
@@ -77,7 +78,7 @@ namespace csharptest
 
                 case "2":
                     // delete post
-                Console.Clear();
+           
                 var removepost = new DeletePosts();
                 removepost.DeletePost();
                     return true;
