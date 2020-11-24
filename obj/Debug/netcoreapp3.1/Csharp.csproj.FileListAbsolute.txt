@@ -1,0 +1,64 @@
+/Users/thevegancoin/Desktop/Csharp/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/thevegancoin/Desktop/Csharp/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/thevegancoin/Desktop/Csharp/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/thevegancoin/Desktop/Csharp/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Desktop/Csharp/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Desktop/Csharp/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Documents/MIUN C#/Moment 1/Csharp/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache
+/Users/thevegancoin/Desktop/charptest/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/thevegancoin/Desktop/charptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/thevegancoin/Desktop/charptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/thevegancoin/Desktop/charptest/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Desktop/charptest/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/thevegancoin/Desktop/charptest/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache
+/Users/Johannes/Downloads/csharptest/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/Johannes/Downloads/csharptest/obj/Debug/netcoreapp3.1/Csharp.csproj.CopyComplete
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Desktop/C#/csharptest/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.csproj.CopyComplete
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fZAX5y70UHOcOGJuFwq61cgHkl0gJIe4OakR+WHGDAF1WRU+eDzn/278V8lAwxGRmO48aeWeooBkQrRT9Jug0w==",
+  "success": true,
+  "projectFilePath": "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj",
+  "expectedPackageFiles": [
+    "/Users/Johannes/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
