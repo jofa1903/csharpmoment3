@@ -20,13 +20,18 @@ namespace csharptest
             // print options to console
             Console.ResetColor();  
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green; 
             Console.WriteLine("Johannes Gästbok");
+            Console.ResetColor();
             Console.WriteLine(" ");
             Console.WriteLine("1) Skriv ett inlägg");
             Console.WriteLine("2) Ta bort inlägg");
             Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.Red; 
             Console.WriteLine("3) Avsluta");
+            Console.ResetColor();
             Console.WriteLine(" ");
+            Console.ForegroundColor = ConsoleColor.Yellow; 
             // path to json file
             string jsonPath = @"posts.json";
 
@@ -46,15 +51,15 @@ namespace csharptest
                     indx++;
                 }
             };
-
+            Console.ResetColor();
             switch (Console.ReadLine())
             {
                 case "1":
                     // create post
+                    
                     var testpost = new CreatePosts();
 
                     testpost.CreateNewPost(out string Name, out string Post);
-
                     postList.Add(new CreatePosts()
                     {
                         MyName = Name,

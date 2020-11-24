@@ -13,10 +13,16 @@ namespace csharptest
         public string MyPost { get; set; }
         public void CreateNewPost(out string Name, out string Post)
         {
+            
             do
             {
+                Console.ResetColor();
                 Console.Clear();
-                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Yellow; 
+                Console.WriteLine("Inga tomma fält ");
+                Console.WriteLine("");
+                Console.ResetColor();
+                
                 Console.Write("Skriv ditt namn ");
                 Name = Console.ReadLine();
             }
@@ -24,11 +30,11 @@ namespace csharptest
 
             do
             {
-                Console.WriteLine();
+                Console.ResetColor();
                 Console.Write("Skriv meddelande ");
                 Post = Console.ReadLine();
             } while (string.IsNullOrEmpty(Post));
-
+            
         }
     }
     public class DeletePosts
@@ -79,12 +85,16 @@ namespace csharptest
                 Console.ForegroundColor = ConsoleColor.Red; 
                 Console.Clear();
                 Console.WriteLine("Fel inmatat värde");
+                Console.WriteLine("");
+                Console.ResetColor();
                 test = true;
             }
             catch (ArgumentOutOfRangeException)
             {
                 Console.ForegroundColor = ConsoleColor.Red; 
                 Console.WriteLine("Fel inmatat värde");
+                Console.WriteLine("");
+                Console.ResetColor();
                 test = true;
             }
             }while(test);
