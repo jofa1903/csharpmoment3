@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace csharptest
+namespace moment3
 {
     class Program
     {
@@ -18,20 +18,20 @@ namespace csharptest
         private static bool MainMenu()
         {
             // print options to console
-            Console.ResetColor();  
+            Console.ResetColor();
             Console.Clear();
-            Console.ForegroundColor = ConsoleColor.Green; 
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Johannes Gästbok");
             Console.ResetColor();
             Console.WriteLine(" ");
             Console.WriteLine("1) Skriv ett inlägg");
             Console.WriteLine("2) Ta bort inlägg");
             Console.WriteLine(" ");
-            Console.ForegroundColor = ConsoleColor.Red; 
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("3) Avsluta");
             Console.ResetColor();
             Console.WriteLine(" ");
-            Console.ForegroundColor = ConsoleColor.Yellow; 
+            Console.ForegroundColor = ConsoleColor.Yellow;
             // path to json file
             string jsonPath = @"posts.json";
 
@@ -41,41 +41,43 @@ namespace csharptest
             var postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
             ?? new List<CreatePosts>();
 
+            // checking to see if data exists in JSON-file
             if (File.Exists(jsonPath))
             {
 
                 int indx = 1;
                 foreach (var post in postList)
                 {
-                    Console.WriteLine($"[{indx}] {post.MyName} - {post.MyPost}");
+                    Console.WriteLine($"[{indx}] {post.Author} - {post.Message}");
                     indx++;
                 }
             };
             Console.ResetColor();
+
+            // user options
             switch (Console.ReadLine())
             {
                 case "1":
                     // create post
-                    
                     var testpost = new CreatePosts();
 
                     testpost.CreateNewPost(out string Name, out string Post);
                     postList.Add(new CreatePosts()
                     {
-                        MyName = Name,
-                        MyPost = Post,
+                        Author = Name,
+                        Message = Post,
                     });
-
+                    
                     jsonData = JsonConvert.SerializeObject(postList);
                     File.WriteAllText(jsonPath, jsonData);
-
+                    // checking to see if data exists in JSON-file and printing new data to console
                     if (File.Exists(jsonPath))
                     {
 
                         int indx = 1;
                         foreach (var post in postList)
                         {
-                            Console.WriteLine($"[{indx}] {post.MyName} - {post.MyPost}");
+                            Console.WriteLine($"[{indx}] {post.Author} - {post.Message}");
                             indx++;
                         }
                     };
@@ -83,11 +85,10 @@ namespace csharptest
 
                 case "2":
                     // delete post
-           
-                var removepost = new DeletePosts();
-                removepost.DeletePost();
+                    var removepost = new DeletePosts();
+                    removepost.DeletePost();
                     return true;
-              
+
                 case "3":
                     // if chosen exit app
                     Console.Clear();
