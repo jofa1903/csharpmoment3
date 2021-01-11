@@ -7,11 +7,11 @@ using Newtonsoft.Json;
 
 namespace moment3
 {
-    public class CreatePosts
+    public class CreatePizza
     {
         public string Name{ get; set; }
         public int Price { get; set; }
-        public void CreateNewPost(out string Name, out int Price)
+        public void CreateNewPizza(out string Name, out int Price)
         {
 
 

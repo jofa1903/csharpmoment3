@@ -7,10 +7,10 @@ using Newtonsoft.Json;
 
 namespace moment3
 {
-    public class DeletePosts
+    public class DeletePizza
     {
 
-        public void DeletePost()
+        public void DeleteMyPizza()
         {
             Console.Clear();
             var test = true;
@@ -18,12 +18,12 @@ namespace moment3
             {
                 Console.Write("Skriv in med siffror vilket inlägg du vill radera ");
 
-                string jsonPath = @"posts.json";
+                string jsonPath = @"pizza.json";
 
                 var jsonData = System.IO.File.ReadAllText(jsonPath);
 
-                var postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-                ?? new List<CreatePosts>();
+                var pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+                ?? new List<CreatePizza>();
 
                 // checking to see if data exists in JSON-file
                 if (File.Exists(jsonPath))
@@ -31,9 +31,9 @@ namespace moment3
                     Console.WriteLine(" ");
                     Console.WriteLine(" ");
                     int indx = 1;
-                    foreach (var post in postList)
+                    foreach (var pizza in pizzaList)
                     {
-                        Console.WriteLine($"[{indx}] {post.Name}");
+                        Console.WriteLine($"[{indx}] {pizza.Name}");
                         indx++;
                     }
                 };
@@ -43,12 +43,12 @@ namespace moment3
                 {
                     int delIndex = Convert.ToInt32(Console.ReadLine()) - 1;
 
-                    postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-                    ?? new List<CreatePosts>();
+                    pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+                    ?? new List<CreatePizza>();
 
-                    postList.RemoveAt(delIndex);
+                    pizzaList.RemoveAt(delIndex);
 
-                    jsonData = JsonConvert.SerializeObject(postList);
+                    jsonData = JsonConvert.SerializeObject(pizzaList);
                     File.WriteAllText(jsonPath, jsonData);
                     test = false;
                 }

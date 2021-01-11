@@ -24,8 +24,8 @@ namespace moment3
 
                 var jsonData = System.IO.File.ReadAllText(jsonPath);
 
-                var postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-                ?? new List<CreatePosts>();
+                var postList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+                ?? new List<CreatePizza>();
 
                 // checking to see if data exists in JSON-file
                 if (File.Exists(jsonPath))
@@ -45,8 +45,8 @@ namespace moment3
                 {
                     int delIndex = Convert.ToInt32(Console.ReadLine()) - 1;
 
-                    postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-                    ?? new List<CreatePosts>();
+                    postList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+                    ?? new List<CreatePizza>();
 
                     postList.RemoveAt(delIndex);
 

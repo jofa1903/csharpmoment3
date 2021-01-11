@@ -41,8 +41,8 @@ namespace moment3
             var jsonData = System.IO.File.ReadAllText(jsonPath);
 
             // deserialize json
-            var pizzaList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-            ?? new List<CreatePosts>();
+            var pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+            ?? new List<CreatePizza>();
 
             // checking to see if data exists in JSON-file
             if (File.Exists(jsonPath))
@@ -62,10 +62,10 @@ namespace moment3
             {
                 case "1":
                     // create post
-                    var testpost = new CreatePosts();
+                    var testpizza = new CreatePizza();
 
-                    testpost.CreateNewPost(out string Name, out int Price);
-                    pizzaList.Add(new CreatePosts()
+                    testpizza.CreateNewPizza(out string Name, out int Price);
+                    pizzaList.Add(new CreatePizza()
                     {
                         Name = Name,
                         Price = Price
@@ -89,8 +89,8 @@ namespace moment3
 
                 case "2":
                     // delete post
-                    var removepizza = new DeletePosts();
-                    removepizza.DeletePost();
+                    var removepizza = new DeletePizza();
+                    removepizza.DeleteMyPizza();
                     return true;
 
                 case "3":
@@ -100,8 +100,8 @@ namespace moment3
           jsonData = System.IO.File.ReadAllText(jsonPath);
 
             // deserialize json
-           pizzaList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
-            ?? new List<CreatePosts>();
+           pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+            ?? new List<CreatePizza>();
 
             // checking to see if data exists in JSON-file
             if (File.Exists(jsonPath))
