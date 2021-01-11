@@ -36,12 +36,12 @@ namespace moment3
             Console.ForegroundColor = ConsoleColor.Yellow;
 
             // path to json file
-            string jsonPath = @"posts.json";
+            string jsonPath = @"pizza.json";
 
             var jsonData = System.IO.File.ReadAllText(jsonPath);
 
             // deserialize json
-            var postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
+            var pizzaList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
             ?? new List<CreatePosts>();
 
             // checking to see if data exists in JSON-file
@@ -49,9 +49,9 @@ namespace moment3
             {
 
                 int indx = 1;
-                foreach (var post in postList)
+                foreach (var pizza in pizzaList)
                 {
-                    Console.WriteLine($"[{indx}] {post.Name} - {post.Price} kr");
+                    Console.WriteLine($"[{indx}] {pizza.Name} - {pizza.Price} kr");
                     indx++;
                 }
             };
@@ -65,23 +65,23 @@ namespace moment3
                     var testpost = new CreatePosts();
 
                     testpost.CreateNewPost(out string Name, out int Price);
-                    postList.Add(new CreatePosts()
+                    pizzaList.Add(new CreatePosts()
                     {
                         Name = Name,
                         Price = Price
                  
                     });
                     
-                    jsonData = JsonConvert.SerializeObject(postList);
+                    jsonData = JsonConvert.SerializeObject(pizzaList);
                     File.WriteAllText(jsonPath, jsonData);
                     // checking to see if data exists in JSON-file and printing new data to console
                     if (File.Exists(jsonPath))
                     {
 
                         int indx = 1;
-                        foreach (var post in postList)
+                        foreach (var pizza in pizzaList)
                         {
-                            Console.WriteLine($"[{indx}] {post.Name} - {post.Price}kr");
+                            Console.WriteLine($"[{indx}] {pizza.Name} - {pizza.Price}kr");
                             indx++;
                         }
                     };
@@ -89,18 +89,18 @@ namespace moment3
 
                 case "2":
                     // delete post
-                    var removepost = new DeletePosts();
-                    removepost.DeletePost();
+                    var removepizza = new DeletePosts();
+                    removepizza.DeletePost();
                     return true;
 
                 case "3":
                 Console.WriteLine("Heloooooo");            // path to json file
-           jsonPath = @"posts.json";
+           jsonPath = @"pizza.json";
 
           jsonData = System.IO.File.ReadAllText(jsonPath);
 
             // deserialize json
-           postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
+           pizzaList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
             ?? new List<CreatePosts>();
 
             // checking to see if data exists in JSON-file
@@ -108,9 +108,9 @@ namespace moment3
             {
 
                 int indx = 1;
-                foreach (var post in postList)
+                foreach (var pizza in pizzaList)
                 {
-                    Console.WriteLine($"[{indx}] {post.Name} - {post.Price} kr");
+                    Console.WriteLine($"[{indx}] {pizza.Name} - {pizza.Price} kr");
                     indx++;
                 }
             };
