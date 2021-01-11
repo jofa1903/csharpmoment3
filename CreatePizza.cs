@@ -16,9 +16,7 @@ namespace pizzaProjekt
 
             Name = "";
             Price = 0;
-                // user options
 
-                // error check
                 Console.ResetColor();
             
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -53,19 +51,6 @@ namespace pizzaProjekt
                 default:
                     break;
             }
-                // Console.Write("Skriv ditt namn ");
-                // store indata to variable
-              
-            // }
-            // while (string.IsNullOrEmpty(Name));
-
-            // do
-            // {
-            //     Console.ResetColor();
-            //     Console.Write("Skriv meddelande ");
-            //     // store indata to variable
-            //     Post = Console.ReadLine();
-            // } while (string.IsNullOrEmpty(Post));
 
         }
     }
