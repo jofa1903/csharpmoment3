@@ -5,7 +5,7 @@ using System.IO;
 using Newtonsoft.Json;
 
 
-namespace moment3
+namespace pizzaProjekt
 {
     public class DeletePizza
     {
