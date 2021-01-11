@@ -7,42 +7,12 @@ using Newtonsoft.Json;
 
 namespace moment3
 {
-    public class CreatePosts
-    {
-        public string Author { get; set; }
-        public string Message { get; set; }
-        public void CreateNewPost(out string Name, out string Post)
-        {
-            do
-            {   
-                // error check
-                Console.ResetColor();
-                Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Inga tomma fält ");
-                Console.WriteLine("");
-                Console.ResetColor();
-                
-                Console.Write("Skriv ditt namn ");
-                // store indata to variable
-                Name = Console.ReadLine();
-            }
-            while (string.IsNullOrEmpty(Name));
-
-            do
-            {
-                Console.ResetColor();
-                Console.Write("Skriv meddelande ");
-                // store indata to variable
-                Post = Console.ReadLine();
-            } while (string.IsNullOrEmpty(Post));
-
-        }
-    }
-    public class DeletePosts
+    public class PayPizza
     {
 
-        public void DeletePost()
+        public void Pay()
+
+
         {
             Console.Clear();
             var test = true;
@@ -65,7 +35,7 @@ namespace moment3
                     int indx = 1;
                     foreach (var post in postList)
                     {
-                        Console.WriteLine($"[{indx}] {post.Author} - {post.Message}");
+                        Console.WriteLine($"[{indx}] {post.Name}");
                         indx++;
                     }
                 };
@@ -106,4 +76,6 @@ namespace moment3
     }
 
 }
+
+
 

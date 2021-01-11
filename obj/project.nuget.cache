@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fZAX5y70UHOcOGJuFwq61cgHkl0gJIe4OakR+WHGDAF1WRU+eDzn/278V8lAwxGRmO48aeWeooBkQrRT9Jug0w==",
+  "dgSpecHash": "pPalOxcPIxlJFXZsEMaahvZfojH9BCRyGPlE1ggiDBepUw/aEM1cNEdN1IwKkayRCtp8L5mX8RJCn3yXi0bPgw==",
   "success": true,
-  "projectFilePath": "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj",
+  "projectFilePath": "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj",
   "expectedPackageFiles": [
     "/Users/Johannes/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512"
   ],

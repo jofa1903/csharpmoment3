@@ -62,3 +62,17 @@
 /Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.dll
 /Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.pdb
 /Users/Johannes/Desktop/C#/csharptest/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Csharp.deps.json
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.json
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Csharp.runtimeconfig.dev.json
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Desktop/C#/Pizza/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.csprojAssemblyReference.cache
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfoInputs.cache
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.AssemblyInfo.cs
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.csproj.CoreCompileInputs.cache
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.csproj.CopyComplete
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.dll
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.pdb
+/Users/Johannes/Desktop/C#/Pizza/obj/Debug/netcoreapp3.1/Csharp.genruntimeconfig.cache

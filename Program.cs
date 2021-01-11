@@ -21,17 +21,20 @@ namespace moment3
             Console.ResetColor();
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Johannes Gästbok");
+            Console.WriteLine("Luigis Pizza");
             Console.ResetColor();
             Console.WriteLine(" ");
-            Console.WriteLine("1) Skriv ett inlägg");
-            Console.WriteLine("2) Ta bort inlägg");
+            Console.WriteLine("1) Pizzameny");
+            Console.WriteLine("2) Ta bort vara ur varukorgen");
+            Console.WriteLine("3) Betala");
             Console.WriteLine(" ");
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine("3) Avsluta");
+            Console.WriteLine("4) Avsluta");
             Console.ResetColor();
             Console.WriteLine(" ");
+            Console.WriteLine("Varukorgen");
             Console.ForegroundColor = ConsoleColor.Yellow;
+
             // path to json file
             string jsonPath = @"posts.json";
 
@@ -48,7 +51,7 @@ namespace moment3
                 int indx = 1;
                 foreach (var post in postList)
                 {
-                    Console.WriteLine($"[{indx}] {post.Author} - {post.Message}");
+                    Console.WriteLine($"[{indx}] {post.Name} - {post.Price} kr");
                     indx++;
                 }
             };
@@ -61,11 +64,12 @@ namespace moment3
                     // create post
                     var testpost = new CreatePosts();
 
-                    testpost.CreateNewPost(out string Name, out string Post);
+                    testpost.CreateNewPost(out string Name, out int Price);
                     postList.Add(new CreatePosts()
                     {
-                        Author = Name,
-                        Message = Post,
+                        Name = Name,
+                        Price = Price
+                 
                     });
                     
                     jsonData = JsonConvert.SerializeObject(postList);
@@ -77,7 +81,7 @@ namespace moment3
                         int indx = 1;
                         foreach (var post in postList)
                         {
-                            Console.WriteLine($"[{indx}] {post.Author} - {post.Message}");
+                            Console.WriteLine($"[{indx}] {post.Name} - {post.Price}kr");
                             indx++;
                         }
                     };
@@ -90,11 +94,34 @@ namespace moment3
                     return true;
 
                 case "3":
-                    // if chosen exit app
-                    Console.Clear();
-                    Console.WriteLine("Adios!");
-                    Console.WriteLine("");
-                    return false;
+                Console.WriteLine("Heloooooo");            // path to json file
+           jsonPath = @"posts.json";
+
+          jsonData = System.IO.File.ReadAllText(jsonPath);
+
+            // deserialize json
+           postList = JsonConvert.DeserializeObject<List<CreatePosts>>(jsonData)
+            ?? new List<CreatePosts>();
+
+            // checking to see if data exists in JSON-file
+            if (File.Exists(jsonPath))
+            {
+
+                int indx = 1;
+                foreach (var post in postList)
+                {
+                    Console.WriteLine($"[{indx}] {post.Name} - {post.Price} kr");
+                    indx++;
+                }
+            };
+                    return true;
+
+                case "4":
+                // if chosen exit app
+                Console.Clear();
+                Console.WriteLine("Adios!");
+                Console.WriteLine("");
+                return false;
 
                 default:
                     return true;

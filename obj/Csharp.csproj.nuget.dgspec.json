@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj": {}
+    "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj": {}
   },
   "projects": {
-    "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj": {
+    "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj",
+        "projectUniqueName": "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj",
         "projectName": "Csharp",
-        "projectPath": "/Users/Johannes/Desktop/C#/csharptest/Csharp.csproj",
+        "projectPath": "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj",
         "packagesPath": "/Users/Johannes/.nuget/packages/",
-        "outputPath": "/Users/Johannes/Desktop/C#/csharptest/obj/",
+        "outputPath": "/Users/Johannes/Desktop/C#/Pizza/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
