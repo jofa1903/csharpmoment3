@@ -94,26 +94,13 @@ namespace moment3
                     return true;
 
                 case "3":
-                Console.WriteLine("Heloooooo");            // path to json file
-           jsonPath = @"pizza.json";
+                    var paypizza = new PayPizza();
+                   paypizza.payMyPizza();
 
-          jsonData = System.IO.File.ReadAllText(jsonPath);
 
-            // deserialize json
-           pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
-            ?? new List<CreatePizza>();
 
-            // checking to see if data exists in JSON-file
-            if (File.Exists(jsonPath))
-            {
 
-                int indx = 1;
-                foreach (var pizza in pizzaList)
-                {
-                    Console.WriteLine($"[{indx}] {pizza.Name} - {pizza.Price} kr");
-                    indx++;
-                }
-            };
+
                     return true;
 
                 case "4":

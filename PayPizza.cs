@@ -9,69 +9,31 @@ namespace moment3
 {
     public class PayPizza
     {
+        public void payMyPizza(){
+                        
+            string jsonPath = @"pizza.json";
 
-        public void Pay()
+            var jsonData = System.IO.File.ReadAllText(jsonPath);
 
+            // deserialize json
+            var pizzaList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
+            ?? new List<CreatePizza>();
 
-        {
-            Console.Clear();
-            var test = true;
-            do
+            // checking to see if data exists in JSON-file
+            if (File.Exists(jsonPath))
             {
-                Console.Write("Skriv in med siffror vilket inlägg du vill radera ");
 
-                string jsonPath = @"posts.json";
+                int indx = 1;
+                int priceCount = 0;
+                int total = 0;
 
-                var jsonData = System.IO.File.ReadAllText(jsonPath);
-
-                var postList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
-                ?? new List<CreatePizza>();
-
-                // checking to see if data exists in JSON-file
-                if (File.Exists(jsonPath))
+                foreach (var pizza in pizzaList)
                 {
-                    Console.WriteLine(" ");
-                    Console.WriteLine(" ");
-                    int indx = 1;
-                    foreach (var post in postList)
-                    {
-                        Console.WriteLine($"[{indx}] {post.Name}");
-                        indx++;
-                    }
-                };
-
-                // exception handling
-                try
-                {
-                    int delIndex = Convert.ToInt32(Console.ReadLine()) - 1;
-
-                    postList = JsonConvert.DeserializeObject<List<CreatePizza>>(jsonData)
-                    ?? new List<CreatePizza>();
-
-                    postList.RemoveAt(delIndex);
-
-                    jsonData = JsonConvert.SerializeObject(postList);
-                    File.WriteAllText(jsonPath, jsonData);
-                    test = false;
+                    total = priceCount + pizza.Price;
+                    Console.WriteLine($"[{indx}] {pizza.Name} - {pizza.Price} kr");
+                    indx++;
                 }
-                catch (FormatException)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.Clear();
-                    Console.WriteLine("Fel inmatat värde");
-                    Console.WriteLine("");
-                    Console.ResetColor();
-                    test = true;
-                }
-                catch (ArgumentOutOfRangeException)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Fel inmatat värde");
-                    Console.WriteLine("");
-                    Console.ResetColor();
-                    test = true;
-                }
-            } while (test);
+            };
         }
     }
 
