@@ -14,7 +14,6 @@ namespace moment3
         public void CreateNewPizza(out string Name, out int Price)
         {
 
-
             Name = "";
             Price = 0;
                 // user options

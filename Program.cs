@@ -34,7 +34,7 @@ namespace moment3
             Console.WriteLine(" ");
             Console.WriteLine("Varukorgen");
             Console.ForegroundColor = ConsoleColor.Yellow;
-
+       
             // path to json file
             string jsonPath = @"pizza.json";
 
@@ -95,16 +95,15 @@ namespace moment3
 
                 case "3":
                     var paypizza = new PayPizza();
-                   paypizza.payMyPizza();
-
-
-
-
-
+                    paypizza.payMyPizza();
                     return true;
 
                 case "4":
                 // if chosen exit app
+                File.Delete(@"pizza.json");
+                if (!File.Exists(jsonPath)){
+                FileStream fs = File.Create(jsonPath);
+                }
                 Console.Clear();
                 Console.WriteLine("Adios!");
                 Console.WriteLine("");
