@@ -17,11 +17,22 @@ namespace pizzaProjekt
         }
         private static bool MainMenu()
         {
-            // print options to console
-            Console.ResetColor();
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Luigis Pizza");
+            Console.WriteLine("  /$$$$$$  /$$ /$$$$$$$$ /$$$$$$$$  /$$$$$$ ");
+            Console.WriteLine(" /$$__  $$| $$|____ /$$/|____ /$$/ |____  $$");
+            Console.WriteLine("| $$  | $$| $$   /$$$$/    /$$$$/   /$$$$$$$");
+            Console.WriteLine("| $$  | $$| $$  /$$__/    /$$__/   /$$__  $$");
+            Console.WriteLine("| $$$$$$$/| $$ /$$$$$$$$ /$$$$$$$$|  $$$$$$$");
+            Console.WriteLine("| $$____/ |__/|________/|________/ _______/");
+            Console.WriteLine("| $$                                        ");
+            Console.WriteLine("| $$                                        ");
+            Console.WriteLine("| $$                                        ");
+            Console.WriteLine("|__/                                        ");
+            // print options to console
+            Console.ResetColor();
+            // Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.ResetColor();
             Console.WriteLine(" ");
             Console.WriteLine("1) Pizzameny");

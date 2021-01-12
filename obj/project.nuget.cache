@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pPalOxcPIxlJFXZsEMaahvZfojH9BCRyGPlE1ggiDBepUw/aEM1cNEdN1IwKkayRCtp8L5mX8RJCn3yXi0bPgw==",
+  "dgSpecHash": "+oEXCt5MrF4MZuOyZc3NmxOAucTvf/hVP2ixlu4Yv8G3hOheWyRegzS4lHuO8SU3nDIqQe+tX0NQ9aJoMOjk3Q==",
   "success": true,
   "projectFilePath": "/Users/Johannes/Desktop/C#/Pizza/Csharp.csproj",
   "expectedPackageFiles": [
-    "/Users/Johannes/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512"
+    "/Users/Johannes/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/Johannes/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
   ],
   "logs": []
 }
